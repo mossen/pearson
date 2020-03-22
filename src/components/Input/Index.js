@@ -22,9 +22,10 @@ const Input = props => {
 Input.propTypes = {
   value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   className: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.string.isRequired,
   max: PropTypes.number,
   min: PropTypes.number,
-  step: PropTypes.number
+  step: PropTypes.number,
+  onChangeHandler: PropTypes.func.isRequired
 };
 export default Input;

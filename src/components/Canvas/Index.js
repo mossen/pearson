@@ -41,7 +41,7 @@ const Canvas = ({ velocity }) => {
 };
 
 Canvas.propTypes = {
-  velocity: PropTypes.number
+  velocity: PropTypes.number.isRequired
 };
 
 export default Canvas;
